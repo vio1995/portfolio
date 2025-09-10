@@ -1,7 +1,32 @@
 [tool.commitizen]
-name = "cz_conventional_commits"
+name = "cz_customize"
 tag_format = "$version"
 version_scheme = "semver"
 version = "0.0.1"
 update_changelog_on_bump = true
 major_version_zero = true
+
+[tool.commitizen.customize]
+message_template = "{{type}}: {{message}}"
+
+questions = [
+    { name = "type", type = "list", message = "Selecione o tipo do commit:", choices = [
+        { value = "feat",     name = "feat:     uma nova funcionalidade" },
+        { value = "fix",      name = "fix:      correção de bug" },
+        { value = "docs",     name = "docs:     apenas mudanças na documentação" },
+        { value = "style",    name = "style:    formatação (ponto e vírgula, espaços, etc)" },
+        { value = "refactor", name = "refactor: refatoração de código (sem mudança de comportamento)" },
+        { value = "perf",     name = "perf:     melhorias de performance" },
+        { value = "test",     name = "test:     adicionando ou ajustando testes" },
+        { value = "build",    name = "build:    mudanças que afetam o build ou dependências" },
+        { value = "ci",       name = "ci:       mudanças em pipelines/integrações contínuas" },
+        { value = "chore",    name = "chore:    tarefas de manutenção, configs, etc" },
+        { value = "revert",   name = "revert:   reverte um commit anterior" }
+    ] },
+    { name = "message", type = "input", message = "Descrição curta:" },
+    { name = "body", type = "input", message = "Descrição mais detalhada (opcional):" },
+    { name = "breaking", type = "confirm", message = "Esse commit introduz mudanças incompatíveis (breaking changes)?", default = false },
+    { name = "footer", type = "input", message = "Issues relacionadas (ex: #123, opcional):" }
+]
+
+
