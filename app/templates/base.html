@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{ %block title% }Vitória de Oliveira - Portfólio{% endblock %}</title>
+    <title>{% block title %}Vitória de Oliveira - Portfólio{% endblock %}</title>
 
     <link rel="stylesheet" href="{{url_for('static', filename='css/reset.css')}}">
     <link rel="stylesheet" href="{{url_for('static', filename='css/mobile.css')}}">
@@ -13,7 +13,23 @@
 </head>
 
 <body>
+    <header id="header">
+        <h1 class="main-title">Vitória de Oliveira</h1>
+    </header>
 
+    <nav id="nav">
+        <ul class="navbar">
+            <li><a href="">página inicial</a></li>
+            <li><a href="">sobre</a></li>
+            <li><a href="">projetos</a></li>
+            <li><a href="">curriculo</a></li>
+            <li><a href="">contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
 </body>
 
 </html>
