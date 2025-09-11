@@ -5,7 +5,7 @@ from .config import ProdConfig, DevConfig
 def create_app():
     app = Flask(__name__)
 
-    if os.environ.get(FLASK_ENV) == 'production':
+    if os.environ.get('FLASK_ENV') == 'production':
         app.config.from_object(ProdConfig)
 
     else:

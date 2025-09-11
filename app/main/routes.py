@@ -2,18 +2,18 @@ from flask import Blueprint, render_template
 
 bp = Blueprint("home", __name__)
 
-bp.route("/")
+@bp.route("/")
 def index():
     return render_template("index.html")
 
-bp.route("/about")
+@bp.route("/about")
 def about():
     return render_template("about.html")
 
-bp.route("/projects")
+@bp.route("/projects")
 def projects():
     return render_template("projects.html")
 
-bp.route("/contact")
+@bp.route("/contact")
 def contact():
     return render_template("contact.html")
