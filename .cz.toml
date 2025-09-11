@@ -7,7 +7,7 @@ update_changelog_on_bump = true
 major_version_zero = true
 
 [tool.commitizen.customize]
-message_template = "{{type}}: {{message}}"
+message_template = "{{type}}({{message}}): {{body}}"
 
 questions = [
     { name = "type", type = "list", message = "Selecione o tipo do commit:", choices = [
