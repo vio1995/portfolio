@@ -3,4 +3,12 @@
         background-color: brown;
         color: #fff
     }
+
+    /*IMAGENS STACK*/
+    .img-stack {
+        width: 50px;
+        background-color: beige;
+        padding: 5px;
+        border-radius: 5px;
+    }
 }
