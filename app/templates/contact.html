@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %} Contato {% endblock %}
+
+{% block content %}
+<h3 class="title-h2">Entre em contato comigo!</h3>
+<section class="content">
+    <p>Você pode me achar nas redes sociais linkadas no final dessa página, pelo email vitoriadeo @ yahoo.com ou usar o formulário abaixo.</p>
+    <form class="contact">
+        <label for="name">Nome: </label>
+        <input type="text" id="name">
+
+        <label for="subject">Assunto: </label>
+        <input type="text" id="subject">
+
+        <label for="message">Mensagem: </label>
+        <textarea id="message"></textarea>
+    </form>
+</section>
+{% endblock %}
