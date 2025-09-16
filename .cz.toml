@@ -23,10 +23,6 @@ questions = [
         { value = "chore",    name = "chore:    tarefas de manutenção, configs, etc" },
         { value = "revert",   name = "revert:   reverte um commit anterior" }
     ] },
-    { name = "message", type = "input", message = "Descrição curta:" },
-    { name = "body", type = "input", message = "Descrição mais detalhada (opcional):" },
-    { name = "breaking", type = "confirm", message = "Esse commit introduz mudanças incompatíveis (breaking changes)?", default = false },
-    { name = "footer", type = "input", message = "Issues relacionadas (ex: #123, opcional):" }
 ]
 
 
