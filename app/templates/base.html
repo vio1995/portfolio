@@ -19,17 +19,29 @@
 
     <nav id="nav">
         <ul class="navbar">
-            <li><a href="">página inicial</a></li>
-            <li><a href="">sobre</a></li>
-            <li><a href="">projetos</a></li>
-            <li><a href="">curriculo</a></li>
-            <li><a href="">contato</a></li>
+            <li><a href="{{ url_for('main.index') }}">página inicial</a></li>
+            <li><a href="{{ url_for('main.about') }}">sobre</a></li>
+            <li><a href="{{ url_for('main.projects') }}">projetos</a></li>
+            <li><a href="#">curriculo</a></li>
+            <li><a href="{{ url_for('main.contact') }}">contato</a></li>
         </ul>
     </nav>
 
     <main>
         {% block content %}{% endblock %}
     </main>
+
+    <footer id="footer">
+        <h3 class="title-h2">Social</h3>
+        <ul class="social-media">
+            <li><a href="https://github.com/vitoriadeo" target="_blank">github</a></li>
+            <li><a href="https://www.linkedin.com/in/vitoriadeo/" target="_blank">linkedin</a></li>
+            <li><a href="https://x.com/deovitoriam" target="_blank">x/twitter</a></li>
+        </ul>
+        <p class="copy">&#xA9;
+            <script>document.write(new Date().getFullYear());</script> Vitória de Oliveira
+        </p>
+    </footer>
 </body>
 
 </html>
