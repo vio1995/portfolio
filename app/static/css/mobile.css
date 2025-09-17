@@ -1,7 +1,10 @@
 @media (max-width: 480px) {
     body {
-        background-color: brown;
-        color: #fff
+        color: #242424;
+        margin: 0;
+        padding: 0;
+        font-family: "Roboto Flex", sans-serif;
+        font-optical-sizing: auto;
     }
 
     /*IMAGENS STACK*/
@@ -11,4 +14,78 @@
         padding: 5px;
         border-radius: 5px;
     }
+
+    #header,
+    #footer,
+    #main,
+    #nav {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .description,
+    .stack {
+        font-family: 'Roboto Mono', monospace;
+        padding: 10px;
+        font-size: 1.2rem;
+        margin: 15px 0 15px 0;
+    }
+
+    .main-title {
+        text-align: center;
+        padding: 20px 0 20px 0;
+        font-weight: normal;
+        letter-spacing: 2px;
+    }
+
+    .title-h3 {
+        text-align: center;
+        letter-spacing: 2px;
+        font-family: "Roboto Mono", monospace;
+        font-size: 1.6rem;
+    }
+
+    #symbol {
+        background-color: #242424;
+        position: sticky;
+        top: 0;
+        color: #ddd;
+        padding: 15px 0px 15px 0px;
+        text-align: center;
+        font-family: monospace;
+        font-size: 1.4rem;
+        font-weight: 700;
+    }
+
+    .navbar {
+        list-style-type: none;
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+
+    .navbar li {
+        display: inline;
+    }
+
+    .nav-link {
+        margin: 3px;
+        padding: 8px 10px 8px 10px;
+        text-decoration: none;
+        background-color: #c7c7c7;
+        color: #272727;
+        font-size: 1.1rem;
+        font-family: "Roboto Mono", monospace;
+        border-bottom: 1px solid #c7c7c7;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+        border-bottom: 1px solid #272727;
+    }
+
+
+
+
 }
