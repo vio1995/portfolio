@@ -6,30 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Vitória de Oliveira - Portfólio{% endblock %}</title>
 
-    <link rel="stylesheet" href="{{url_for('static', filename='css/reset.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/normalize.css')}}">
     <link rel="stylesheet" href="{{url_for('static', filename='css/mobile.css')}}">
     <link rel="stylesheet" href="{{url_for('static', filename='css/desktop.css')}}">
     <link rel="icon" href="{{url_for('static', filename='img/favicon.ico')}}" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
+    <div id="symbol">{V}</div>
+
     <header id="header">
-        <h1 class="main-title">Vitória de Oliveira</h1>
+        <h1 class="main-title">vitória de oliveira</h1>
     </header>
 
     <nav id="nav">
         <ul class="navbar">
-            <li><a href="">página inicial</a></li>
-            <li><a href="">sobre</a></li>
-            <li><a href="">projetos</a></li>
-            <li><a href="">curriculo</a></li>
-            <li><a href="">contato</a></li>
+            <li><a class="nav-link" href="">index</a></li>
+            <li><a class="nav-link" href="">sobre</a></li>
+            <li><a class="nav-link" href="">projetos</a></li>
+            <li><a class="nav-link" href="">contato</a></li>
         </ul>
     </nav>
 
-    <main>
+    <main id="main">
         {% block content %}{% endblock %}
     </main>
+
+    <footer id="footer">
+        <h3 class="title-h3">social</h3>
+        <ul>
+            <li><a href="" target="_blank">linkedin</a></li>
+            <li><a href="" target="_blank">github</a></li>
+            <li><a href="" target="_blanck">x</a></li>
+        </ul>
+        <p class="copy"> ©
+            <script>document.write(new Date().getFullYear());</script> Giant
+            2025 Vitória de Oliveira
+        </p>
+    </footer>
 </body>
 
 </html>
