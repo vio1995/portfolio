@@ -7,8 +7,7 @@
     <title>{% block title %}Vitória de Oliveira - Portfólio{% endblock %}</title>
 
     <link rel="stylesheet" href="{{url_for('static', filename='css/normalize.css')}}">
-    <link rel="stylesheet" href="{{url_for('static', filename='css/mobile.css')}}">
-    <link rel="stylesheet" href="{{url_for('static', filename='css/desktop.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
     <link rel="icon" href="{{url_for('static', filename='img/favicon.ico')}}" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,37 +17,48 @@
 </head>
 
 <body>
-    <div id="symbol">{V}</div>
+    <div class="symbol"><span>{v}</span></div>
+    <nav class="menu">
+        <input type="checkbox" class="menu-faketrigger">
+        <div class="menu-lines">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul>
+            <li><a href="{{url_for('main.index')}}">index</a></li>
+            <li><a href="{{url_for('main.about')}}">sobre</a></li>
+            <li><a href="{{url_for('main.projects')}}">projetos</a></li>
+            <li><a href="#">currículo</a></li>
+            <li><a href="{{url_for('main.contact')}}">contato</a></li>
 
-    <header id="header">
-        <h1 class="main-title">vitória de oliveira</h1>
-    </header>
-
-    <nav id="nav">
-        <ul class="navbar">
-            <li><a class="nav-link" href="">index</a></li>
-            <li><a class="nav-link" href="">sobre</a></li>
-            <li><a class="nav-link" href="">projetos</a></li>
-            <li><a class="nav-link" href="">contato</a></li>
         </ul>
     </nav>
+
+
+    <header id="header">
+        <h1 class="main-title"></h1>
+    </header>
 
     <main id="main">
         {% block content %}{% endblock %}
     </main>
 
     <footer id="footer">
-        <h3 class="title-h3">social</h3>
-        <ul>
-            <li><a href="" target="_blank">linkedin</a></li>
-            <li><a href="" target="_blank">github</a></li>
-            <li><a href="" target="_blanck">x</a></li>
-        </ul>
-        <p class="copy"> ©
-            <script>document.write(new Date().getFullYear());</script> Giant
-            2025 Vitória de Oliveira
-        </p>
+        <section class="content">
+            <h3 class="title-h3">social</h3>
+            <ul>
+                <li><a href="" target="_blank">linkedin</a></li>
+                <li><a href="" target="_blank">github</a></li>
+                <li><a href="" target="_blanck">x</a></li>
+            </ul>
+            <p class="copy"> ©
+                <script>document.write(new Date().getFullYear());</script>
+                Vitória de Oliveira
+            </p>
+        </section>
     </footer>
+    <script src="{{url_for('static', filename='js/behaviors.js')}}"></script>
 </body>
 
 </html>
