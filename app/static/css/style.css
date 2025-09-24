@@ -1,0 +1,227 @@
+    * {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    a {
+        color: #ff28a5;
+        text-decoration: none;
+    }
+
+    body {
+        color: #242424;
+        margin: 0;
+        padding: 0;
+        font-family: "Roboto Flex", sans-serif;
+        font-optical-sizing: auto;
+    }
+
+    #header,
+    #footer,
+    #main,
+    #nav {
+        margin: 0 auto;
+        width: 800px;
+    }
+
+    .description,
+    .content,
+    .stack {
+        font-family: 'Roboto Mono', monospace;
+        padding: 30px 30px 0 30px;
+        font-size: 1.0rem;
+        margin: 15px 0 0px 0;
+        line-height: 1.8rem;
+    }
+
+    .stack ul {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .stack ul li {
+        text-transform: uppercase;
+        font-size: .9rem;
+        background-color: #272727;
+        color: #aaaaaa;
+        padding: 3px 6px;
+        border-radius: 3px;
+        border: 1px solid #242424;
+    }
+
+    .main-title {
+        text-align: center;
+        padding: 20px 0 20px 0;
+        font-weight: normal;
+        letter-spacing: 2px;
+    }
+
+    .title-h3,
+    .title-h2 {
+        text-align: left;
+        letter-spacing: 2px;
+        font-family: "Roboto Mono", monospace;
+        font-size: 1.6rem;
+        border-bottom: 1px solid #242424;
+        display: inline-block;
+        margin-bottom: 25px;
+        text-transform: lowercase;
+    }
+
+    .menu {
+        margin: 30px 0 0 30px;
+    }
+
+    .menu .menu-faketrigger {
+        position: absolute;
+        z-index: 1000;
+        width: 35px;
+        height: 35px;
+        opacity: 0;
+    }
+
+    .menu .menu-faketrigger:checked~ul {
+        background-color: #242424;
+        color: #cdcdcd;
+
+    }
+
+    .menu .menu-lines {
+        position: absolute;
+        z-index: 999;
+        width: 35px;
+        height: 35px;
+    }
+
+    .menu .menu-lines span {
+        display: block;
+        width: 35px;
+        height: 5px;
+        margin-bottom: 10px;
+        background-color: #272727;
+        border-radius: 3px;
+        transition: all ease .2s;
+    }
+
+    .menu .menu-faketrigger:checked~.menu-lines span {
+        background-color: #cdcdcd;
+    }
+
+    .menu .menu-faketrigger:checked~.menu-lines span:nth-child(1) {
+        transform-origin: 0% 0%;
+        transform: rotate(45deg) scaleX(1.25);
+    }
+
+    .menu .menu-faketrigger:checked~.menu-lines span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu .menu-faketrigger:checked~.menu-lines span:nth-child(3) {
+        transform-origin: 0% 100%;
+        transform: rotate(-45deg) scaleX(1.25);
+    }
+
+    .menu ul {
+        position: absolute;
+        z-index: 998;
+        left: 0;
+        top: 0;
+        width: 285px;
+        background-color: #242424;
+        height: calc(100vh - 100px);
+        padding-top: 100px;
+        margin-left: -285px;
+        transition: all ease .2s;
+    }
+
+    .menu .menu-faketrigger:checked~ul {
+        margin-left: 0;
+    }
+
+    .menu ul li {
+        padding: 10px 30px;
+    }
+
+    .menu ul li a {
+        text-decoration: none;
+        color: #cdcdcd;
+        font-size: 1.5rem;
+        transition: all ease .3s;
+    }
+
+    .menu ul li a:hover {
+        color: #aaaaaa;
+    }
+
+    .symbol {
+        position: fixed;
+        top: 20px;
+        right: 25px;
+        transition: opacity 0.3s ease-out;
+    }
+
+    .symbol span {
+        font-size: 2.5rem;
+    }
+
+
+    #footer ul {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    #footer ul li a {
+        text-decoration: none;
+        text-transform: uppercase;
+        border: 1px solid #272727;
+        padding: 3px 6px;
+        border-radius: 2px;
+        background: #e7e7e7;
+        color: #242424;
+        transition: all .2s;
+        font-size: .9rem;
+    }
+
+    #footer ul li a:hover {
+        background-color: #ff28a5;
+        color: #fcfcfc;
+        padding: 3px 6px;
+        border-radius: 3px;
+        border: 1px solid #242424;
+    }
+
+    .copy {
+        margin-top: 30px;
+    }
+
+
+    @media (max-width: 600px) {
+        #header,
+        #footer,
+        #main,
+        #nav {
+            width: 100%;
+        }
+
+        .description,
+        .content,
+        .stack {
+            font-size: 1.3rem;
+        }
+
+        .stack ul li {
+            font-size: 1.1rem;
+        }
+
+        .menu ul li a {
+            font-size: 2rem;
+        }
+
+        #footer ul li a {
+            font-size: 1.2rem;
+        }
+
+    }
