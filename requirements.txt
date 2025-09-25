@@ -7,10 +7,16 @@ colorama==0.4.6
 commitizen==4.8.4
 decli==0.6.3
 distlib==0.4.0
+dnspython==2.8.0
+email-validator==2.3.0
 filelock==3.19.1
 Flask==3.1.2
+flask-fontawesome==0.2.0
+Flask-Mail==0.10.0
+Flask-WTF==1.2.2
 gunicorn==23.0.0
 identify==2.6.14
+idna==3.10
 itsdangerous==2.2.0
 Jinja2==3.1.6
 MarkupSafe==3.0.2
@@ -27,3 +33,4 @@ tomlkit==0.13.3
 virtualenv==20.34.0
 wcwidth==0.2.13
 Werkzeug==3.1.3
+WTForms==3.2.1
