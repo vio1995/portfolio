@@ -4,8 +4,9 @@ from app import mail
 
 def envia_Email(name, subject, sender, message):
     try:
+        sender_username = current_app.config['MAIL_USERNAME']
         destinatario = current_app.config['MAIL_RECIPIENT']
-        msg = Message(subject, recipients=[destinatario])
+        msg = Message(subject, sender=sender_username, recipients=[destinatario])
         msg.body = f'De: {name} <{sender}> \n\n {message}'
         mail.send(msg)
 
