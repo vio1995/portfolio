@@ -80,6 +80,7 @@
         width: 35px;
         height: 35px;
         opacity: 0;
+        cursor: pointer;
     }
 
     .menu .menu-faketrigger:checked~ul {
@@ -166,6 +167,9 @@
         font-size: 2.5rem;
     }
 
+    #footer {
+        margin-bottom: 25px;
+    }
 
     #footer ul {
         display: flex;
@@ -197,8 +201,16 @@
         margin-top: 30px;
     }
 
+    .alert {
+        background-color: #e0e0e0;
+        padding: 3px 6px;
+        border-radius: 5px;
+        margin-top: 30px;
+    }
+
 
     @media (max-width: 600px) {
+
         #header,
         #footer,
         #main,
