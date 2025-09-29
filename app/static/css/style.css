@@ -55,7 +55,6 @@
         color: #aaaaaa;
         padding: 0px 6px;
         border-radius: 3px;
-        border: 1px solid #242424;
     }
 
     .main-title {
@@ -187,13 +186,13 @@
     #footer ul li a {
         text-decoration: none;
         text-transform: uppercase;
-        border: 1px solid #272727;
         padding: 3px 6px;
         border-radius: 2px;
-        background: #e7e7e7;
+        background: #d3d3d3;
         color: #242424;
         transition: all .2s;
         font-size: .9rem;
+        border: 1px solid transparent;
     }
 
     #footer ul li a:hover {
@@ -239,6 +238,16 @@
         border-radius: 3px;
     }
 
+    .projects {
+        margin-bottom: 30px;
+    }
+
+    .projects img {
+        width: 100%;
+        border: 1px solid #242424;
+        border-radius: 5px;
+        margin: 5px 0 10px 0;
+}
 
     @media (max-width: 600px) {
 
