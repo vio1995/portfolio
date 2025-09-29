@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %} Home {% endblock %}
+{% block title %} {{ super() }} - Home {% endblock %}
 
 {% block content %}
 
@@ -9,7 +9,6 @@
     Meu nome é Vitória, moro no Rio de Janeiro/RJ, sou aspirante a dev backend python e adoro
     construir aplicações web. Sou movida pela curiosidade e pelo prazer de ver um projeto ganhar vida, da primeira linha
     de código até a solução final.<br><br>
-    <p>Aqui você pode ler mais <a href="{{url_for('main.about')}}">sobre mim</a> e conhecer as coisas que <a href="{{url_for('main.projects')}}">criei.</a></p>
 </section>
 
 <section class="stack">

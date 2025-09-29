@@ -1,39 +1,37 @@
 {% extends "base.html" %}
 
-{% block title %} Projetos {% endblock %}
+{% block title %} {{ super() }} - Projetos {% endblock %}
 
 {% block content %}
 <section class="content">
     <h2 class="title-h2">Meus projetos</h2>
-
     <div class="projects">
-        <img src="" alt="">
+        <h4><mark>Portfólio</mark></h4>
+        <img src="{{url_for('static', filename='img/pfl.png')}}"" alt="">
+
         <p>
-            Vivamus a neque quam. Fusce et ornare risus. Interdum et malesuada fames ac ante ipsum primis in
-            faucibus.
-            Cras convallis massa quis ante tempor facilisis a non erat. Maecenas ultricies lacinia diam.
+            Este portfólio foi feito para agregar os projetos que fiz e projetos futuros. Também foi construído como
+            forma de aprendizado e consolidação de conhecimento.
+        </p><br>
+        <p>
+            Leia mais sobre no Github: <a href="https://github.com/vitoriadeo/portfolio" target="_blank">Portfólio</a><br>
+            <small>Agosto, 2025 - Outubro, 2025</small>
         </p>
-        <ul class="tech-stack">
-            <li>tech 1</li>
-            <li>tech 2</li>
-            <li>tech 3</li>
-            <li>tech 4</li>
-        </ul>
     </div>
 
-    <div class="projects">
-        <img src="" alt="">
+    <div class=" projects">
+        <h4><mark>Trago notícias</mark></h4>
+        <img src="{{url_for('static', filename='img/tn.png')}}" alt="">
+
         <p>
-            Vivamus a neque quam. Fusce et ornare risus. Interdum et malesuada fames ac ante ipsum primis in
-            faucibus.
-            Cras convallis massa quis ante tempor facilisis a non erat. Maecenas ultricies lacinia diam.
+            Aplicação web bem parecida com o Google Alerts. O usuário cadastra um termo que tenha interesse em monitorar
+            e assim que aparecer alguma novidade sobre esse termo na internet, o usuário é informado por email alertando
+            o que há de novo e com as notícias linkadas sobre aquele termo.
+        </p><br>
+        <p>
+            Leia mais sobre no Github: <a href="https://github.com/vitoriadeo/trago-noticias" target="_blank">Trago notícias</a><br>
+            <small>Agosto, 2025 - em desenvolvimento</small>
         </p>
-        <ul class="tech-stack">
-            <li>tech 1</li>
-            <li>tech 2</li>
-            <li>tech 3</li>
-            <li>tech 4</li>
-        </ul>
     </div>
 </section>
 {% endblock %}

@@ -4,16 +4,19 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}Vitória de Oliveira - Portfólio{% endblock %}</title>
+    <title>{% block title %}Vitória de Oliveira{% endblock %}</title>
 
     <link rel="stylesheet" href="{{url_for('static', filename='css/normalize.css')}}">
     <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
-    <link rel="icon" href="{{url_for('static', filename='img/favicon.ico')}}" type="image/x-icon">
+    <link rel="icon" href="{{url_for('static', filename='img/favicon.ico')}}" type="image/png">
+    <link rel="icon" href="{{url_for('static', filename='img/favicon-32x32.png')}}" type="image/png">
+    <link rel="apple-touch-icon" href="{{url_for('static', filename='img/apple-touch-icon.png')}}" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
         rel="stylesheet">
+
 </head>
 
 <body>
@@ -48,9 +51,8 @@
         <section class="content">
             <h3 class="title-h3">social</h3>
             <ul>
-                <li><a href="" target="_blank">linkedin</a></li>
-                <li><a href="" target="_blank">github</a></li>
-                <li><a href="" target="_blanck">x</a></li>
+                <li><a href="https://www.linkedin.com/in/vitoriadeo/" target="_blank">linkedin</a></li>
+                <li><a href="https://github.com/vitoriadeo" target="_blank">github</a></li>
             </ul>
             <p class="copy"> ©
                 <script>document.write(new Date().getFullYear());</script>
