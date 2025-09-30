@@ -187,7 +187,7 @@
         text-decoration: none;
         text-transform: uppercase;
         padding: 3px 6px;
-        border-radius: 2px;
+        border-radius: 3px;
         background: #d3d3d3;
         color: #242424;
         transition: all .2s;
@@ -247,7 +247,37 @@
         border: 1px solid #242424;
         border-radius: 5px;
         margin: 5px 0 10px 0;
-}
+    }
+
+    @media (prefers-color-scheme: dark) {
+        a {
+            color: #fff;
+        }
+
+        mark {
+            background-color: #ff28a5;
+            color: #ffffff;
+        }
+
+        .description,
+        .content,
+        .stack {
+            color: #aaa;
+        }
+
+        #footer ul li a {
+            background-color: #272727;
+            color: #aaa;
+        }
+
+        .menu .menu-lines span {
+            background-color: #a3a3a3;
+        }
+
+        .symbol span {
+            color: #dadada;
+        }
+    }
 
     @media (max-width: 600px) {
 
