@@ -2,7 +2,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
     const symbol = document.querySelector('.symbol');
 
-    window.addEventListener('scroll', function() {
+    window.addEventListener('scroll', function () {
         let scrollPos = window.scrollY;
 
         let distanciaFade = 50;

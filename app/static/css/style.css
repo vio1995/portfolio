@@ -277,6 +277,10 @@
         .symbol span {
             color: #dadada;
         }
+
+        .alert {
+            background-color: #272727;
+        }
     }
 
     @media (max-width: 600px) {

@@ -1,10 +1,8 @@
-from flask_mail import Mail
 import os
 from flask import Flask
 from .config import ProdConfig, DevConfig
 
 app = Flask(__name__)
-mail = Mail()
 
 def create_app():
 
@@ -13,8 +11,6 @@ def create_app():
 
     else:
         app.config.from_object(DevConfig)
-
-    mail.init_app(app)
 
     from app.main import routes
     app.register_blueprint(routes.bp)
