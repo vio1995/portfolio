@@ -249,6 +249,12 @@
         margin: 5px 0 10px 0;
     }
 
+    .textarea {
+        width: 100%;
+        min-height: 160px;
+        resize: vertical;
+    }
+
     @media (prefers-color-scheme: dark) {
         a {
             color: #fff;

@@ -6,5 +6,5 @@ class Contact(FlaskForm):
     name = StringField("Nome", validators=[DataRequired(), Length(min=2, max=100)])
     subject = StringField("Assunto", validators=[DataRequired(), Length(min=2, max=100)])
     email = EmailField("E-mail", validators=[DataRequired(), Email()])
-    message = TextAreaField("Mensagem", validators=[InputRequired()])
+    message = TextAreaField("Mensagem", validators=[InputRequired()], render_kw={"class": "textarea"})
     submit = SubmitField('Enviar mensagem')
