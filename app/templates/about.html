@@ -1,39 +1,62 @@
 {% extends "base.html" %}
 
-{% block title %}  {{ super() }} - Sobre {% endblock %}
+{% block title %} {{ super() }} - Sobre {% endblock %}
 
 {% block content %}
 <section class="content">
     <h2 class="title-h2">Sobre mim</h2>
-    <p>Meu primeiro contato com computadores foi quando ganhamos nosso primeiro PC em casa. Ele rodava o Windows XP,
-        justamente na época em que o Orkut era muito popular no Brasil. Eu gostava muito de personalizar o sistema
-        operacional com temas e outras ferramentas, um hábito que se estendeu para os outros sistemas que tive. O
-        Windows
-        Vista foi meu favorito, pois achava ele lindíssimo (e acho até hoje).</p>
+
+    <p>
+        Sou estudante de Sistemas de Informação e, nas horas vagas, escrevo algumas coisinhas técnicas e informais <a href="https://vvfinds.neocities.org/">neste</a>
+        blog. Também crio programas para resolver necessidades minhas, como <a
+            href="https://trago-noticias.onrender.com/">este</a> mesmo, que desenvolvi para me ajudar a
+        acompanhar novidades sobre um processo seletivo. Vira e mexe estou procurando ideias para desenvolver algo novo e, no momento,
+        estou me aprofundando em Python e desenvolvimento web, mas continuo com interesse em aprender outras linguagens
+        e boas práticas da área.
+    </p> 
     <br>
-    <p>Um tempo depois, comecei a personalizar templates no Blogger seguindo tutoriais e, logo em seguida, fiz o mesmo
-        com
-        o Tumblr. No Tumblr, além de editar os códigos dos themes, eu também criava tutoriais ensinando o que sabia. No
-        geral, eram tutoriais sobre HTML, CSS, a estrutura de tags específica da plataforma e um pouco de JavaScript
-        para
-        dar um toque especial aos blogs. Eu adorava fazer isso e só parei porque comecei meu primeiro emprego em uma
-        ótica
-        local. Com a rotina de trabalho e estudos, já não tinha tanto tempo como antes.</p>
-    <br>
-    <p>Mais tarde, comecei a estudar para o Enem e a pensar em uma faculdade. A escolha pela área de TI veio depois de
-        um
-        tempo, motivada em parte pela saudade do que eu fazia nas plataformas de blogs anos antes. Meu primeiro curso na
-        área foi Análise e Desenvolvimento de Sistemas (ADS), que não cheguei a concluir por problemas financeiros. Após
-        um
-        período com muitos acontecimentos e trabalhos intensos no regime CLT (6x1), decidi cursar Sistemas de Informação
-        (SI), que é o meu curso atual.</p>
-    <br>
-    <p>Atualmente, sou mãe de uma criança pequena, dona de casa e estudante. Paralelamente, faço estudos práticos de
-        forma
-        autodidata, cujos projetos podem ser vistos no meu <a href="https://github.com/vitoriadeo" target="_blank">Github</a>. Adoro desenvolver minhas ideias e transformar em
-        código
-        (e todo o processo de transformar um conceito em algo que possa ser útil e servir a um propósito). Acredito que
-        o
-        meu presente é algo que a minha versão adolescente se orgulharia de ver no futuro.</p>
+    <a href="#trajetoria">Sobre minha trajetória ▼</a><br>
+
+    <div id="trajetoria" class="about-text">
+        <br>
+        <p>Meu primeiro contato com computadores foi quando ganhamos nosso primeiro PC em casa. Ele rodava o Windows XP,
+            justamente na época em que o Orkut era muito popular no Brasil. Eu gostava muito de personalizar o sistema
+            operacional com temas e outras ferramentas, um hábito que se estendeu para os outros sistemas que tive. O
+            Windows
+            Vista foi meu favorito, pois achava ele lindíssimo (e acho até hoje).</p>
+        <br>
+        <p>Um tempo depois, comecei a personalizar templates no Blogger seguindo tutoriais e, logo em seguida, fiz o
+            mesmo
+            com
+            o Tumblr. No Tumblr, além de editar os códigos dos themes, eu também criava tutoriais ensinando o que sabia.
+            No
+            geral, eram tutoriais sobre HTML, CSS, a estrutura de tags específica da plataforma e um pouco de JavaScript
+            para
+            dar um toque especial aos blogs. Eu adorava fazer isso e só parei porque comecei meu primeiro emprego em uma
+            ótica
+            local. Com a rotina de trabalho e estudos, já não tinha tanto tempo como antes.</p>
+        <br>
+        <p>Mais tarde, comecei a estudar para o Enem e a pensar em uma faculdade. A escolha pela área de TI veio depois
+            de
+            um
+            tempo, motivada em parte pela saudade do que eu fazia nas plataformas de blogs anos antes. Meu primeiro
+            curso na
+            área foi Análise e Desenvolvimento de Sistemas (ADS), que não cheguei a concluir por problemas financeiros.
+            Após
+            um
+            período com muitos acontecimentos e trabalhos intensos no regime CLT (6x1), decidi cursar Sistemas de
+            Informação
+            (SI), que é o meu curso atual.</p>
+        <br>
+        <p>Atualmente, sou mãe de uma criança pequena, dona de casa e estudante. Paralelamente, faço estudos práticos de
+            forma
+            autodidata, cujos projetos podem ser vistos no meu <a href="https://github.com/vitoriadeo"
+                target="_blank">Github</a>. Adoro desenvolver minhas ideias e transformar em
+            código
+            (e todo o processo de transformar um conceito em algo que possa ser útil e servir a um propósito). Acredito
+            que
+            o
+            meu presente é algo que a minha versão adolescente se orgulharia de ver no futuro.</p>
+    </div>
 </section>
 {% endblock %}

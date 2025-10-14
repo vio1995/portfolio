@@ -255,6 +255,14 @@
         resize: vertical;
     }
 
+    .about-text {
+        display: none;
+    }
+
+    .about-text:target {
+        display: block;
+    }
+
     @media (prefers-color-scheme: dark) {
         a {
             color: #fff;
